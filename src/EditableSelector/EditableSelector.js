@@ -6,8 +6,8 @@ import Text from '../Deprecated/Text';
 import ButtonWithOptions from '../ButtonWithOptions/ButtonWithOptions';
 import EditableRow from './EditableRow/EditableRow';
 import styles from './EditableSelector.scss';
-import Add from '../../new-icons/Add';
-import Delete from '../../new-icons/Delete';
+import Add from '../new-icons/Add';
+import Delete from '../new-icons/Delete';
 
 class EditableSelector extends WixComponent {
   static propTypes = {

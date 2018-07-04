@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import DropdownLayout from '../../DropdownLayout';
 import Text from '../../Deprecated/Text';
-import ChevronDown from '../../../new-icons/ChevronDown';
+import ChevronDown from '../../new-icons/ChevronDown';
 import styles from './styles.scss';
 
 export default class DropdownPicker extends React.Component {

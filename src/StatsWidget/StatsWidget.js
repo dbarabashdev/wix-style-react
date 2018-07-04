@@ -5,7 +5,7 @@ import WixComponent from '../BaseComponents/WixComponent';
 import styles from './StatsWidget.scss';
 import Text from '../Deprecated/Text';
 import classnames from 'classnames';
-import SortByArrowUp from '../../new-icons/system/SortByArrowUp';
+import SortByArrowUp from '../new-icons/system/SortByArrowUp';
 import ButtonWithOptions from '../ButtonWithOptions';
 
 /**
