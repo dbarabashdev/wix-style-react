@@ -1,6 +1,7 @@
 import React from 'react';
 import {SideMenu} from 'wix-style-react';
-import {Help, Chat} from 'wix-style-react/Icons';
+import InfoCircle from 'wix-style-react/new-icons/InfoCircle';
+import Chat from 'wix-style-react/new-icons/Chat';
 
 export default () =>
   <div style={{width: 220, height: 700, display: 'flex'}}>
@@ -21,7 +22,7 @@ export default () =>
           <SideMenu.FooterLink
             href="https://support.wix.com/"
             target="_blank"
-            icon={<Help size="1em"/>}
+            icon={<InfoCircle/>}
             >
             Help Me!
           </SideMenu.FooterLink>
@@ -29,7 +30,7 @@ export default () =>
           <SideMenu.FooterTinyLink
             href="https://support.wix.com/en/article/wix-seo-wiz-suggestions-and-feedback"
             target="_blank"
-            icon={<div style={{marginTop: 2}}><Chat size="1em"/></div>}
+            icon={<div style={{marginTop: 2}}><Chat/></div>}
             tooltip="Hey, come talk to me!"
             onClick={() => console.log('clicked on tiny link yay!')}
             />
