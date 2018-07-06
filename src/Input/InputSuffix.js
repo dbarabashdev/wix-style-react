@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CloseThin from './../Icons/dist/components/CloseThin';
+import CloseButton from './../CloseButton';
 import ArrowDownThin from './../Icons/dist/components/ArrowDownThin';
 import Search4 from './../Icons/dist/components/Search4';
 import ThemedInputErrorSuffix from './ThemedInputErrorSuffix';
@@ -51,8 +51,8 @@ const InputSuffix = ({theme, errorMessage, error, disabled, help, helpMessage, o
     },
     {
       component: () =>
-        <div onClick={onClear} className={styles.clearButton} data-hook="input-clear-button">
-          <CloseThin size="8px"/>
+        <div className={styles.clearButton} >
+          <CloseButton dataHook="input-clear-button" size="large" onClick={onClear} theme="close-standard"/>
         </div>,
       isVisible: suffixRules.clearButton({isClearButtonVisible})
     },

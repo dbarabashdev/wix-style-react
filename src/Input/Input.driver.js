@@ -5,7 +5,7 @@ import styles from './Input.scss';
 
 const inputDriverFactory = ({element, wrapper, component}) => {
   const input = element && element.querySelector('input');
-  const clearButton = element && element.querySelector(`.${styles.clearButton}`);
+  const clearButton = element && element.querySelector(`[data-hook=input-clear-button]`);
   const suffixNode = element && element.querySelector(`.${styles.suffix}`);
   const unitNode = element && element.querySelector(`.${styles.unit}`);
   const magnifyingGlassNode = element && element.querySelector(`.${styles.magnifyingGlass}`);

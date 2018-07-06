@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Close from 'wix-ui-icons-common/system/Close';
 import classNames from 'classnames';
 import styles from './Tag.scss';
+import CloseButton from '../CloseButton';
 import WixComponent from '../BaseComponents/WixComponent';
 import Typography from '../Typography';
 
@@ -48,7 +48,7 @@ class Tag extends WixComponent {
             event.stopPropagation();
             onRemove(id);
           }}
-          ><Close/></a>}
+          ><CloseButton size="small" theme="close-standard"/></a>}
       </span>
     );
   }

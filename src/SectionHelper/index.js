@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import WixComponent from '../BaseComponents/WixComponent';
 import Text from '../Deprecated/Text';
 import Button from '../Button';
-import CloseIcon from '../Icons/dist/components/Close';
+import CloseButton from '../CloseButton';
 
 import styles from './styles.scss';
 
@@ -26,12 +26,11 @@ class SectionHelper extends WixComponent {
       <div className={classnames(styles.root, HELPER_APPEARANCE[this.props.appearance])}>
         { this.props.onClose &&
           <div className={classnames(styles.close, {[styles.closeWithTitle]: this.props.title})}>
-            <Button
+            <CloseButton
               dataHook="sectionhelper-close-btn"
               size="large"
               theme="close-dark"
               onClick={this.props.onClose}
-              children={<CloseIcon size="8px"/>}
               />
           </div>
         }

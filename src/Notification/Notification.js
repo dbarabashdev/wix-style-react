@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import WixComponent from '../BaseComponents/WixComponent';
 import {children, once, optional} from '../../src/Composite';
-import CloseButton from './CloseButton';
+import CloseButton from './../CloseButton';
 import TextLabel from './TextLabel';
 import ActionButton from './ActionButton';
 import css from './Notification.scss';
@@ -38,12 +38,12 @@ function mapChildren(children) {
     return {
       label: childrenArray[0],
       ctaButton: childrenArray[1],
-      closeButton: childrenArray[2]
+      closeButton: React.cloneElement(childrenArray[2], {size: 'small'})
     };
   } else {
     return {
       label: childrenArray[0],
-      closeButton: childrenArray[1]
+      closeButton: React.cloneElement(childrenArray[1], {size: 'small'})
     };
   }
 }
