@@ -16,7 +16,7 @@ import RTLIconRaw from '!raw-loader!./RTLIcon';
 
 storiesOf('1. Foundation', module)
   .add('1.4 Icons', () => (
-    <div>
+    <div data-hook="new-icons">
       <Markdown source={Readme}/>
 
       <CodeExample title="All Icons" code={AllIconsRaw}>
