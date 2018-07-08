@@ -16,6 +16,7 @@ Types of changes:
 ### Changed
 - `<ColorPicker/>` - migrate to new icons [#1945](https://github.com/wix/wix-style-react/pull/1945)
 - `<FieldLabelAttributes/>` - migrate to new icons [#1945](https://github.com/wix/wix-style-react/pull/1945)
+- `<Card/>` - Add overflow: hidden [#1962](https://github.com/wix/wix-style-react/pull/1962)
 
 ### Added
 - `<Loader/>` - add error and success states (without tooltip yet) [#1953](https://github.com/wix/wix-style-react/pull/1953)
