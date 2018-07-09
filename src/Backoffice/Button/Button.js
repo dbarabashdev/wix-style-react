@@ -1,5 +1,5 @@
 import React from 'react';
-import {func, node, string} from 'prop-types';
+import {bool, func, node, string} from 'prop-types';
 import styles from './Button.scss';
 import WixComponent from '../../BaseComponents/WixComponent';
 import ButtonLayout from '../../ButtonLayout/ButtonLayout';
@@ -13,6 +13,13 @@ const ICON_SIZES = {
   medium: '12px'
 };
 
+const NEW_ICON_SIZES = {
+  large: '24px',
+  medium: '24px',
+  small: '18px',
+  tiny: '18px'
+};
+
 class Button extends WixComponent {
   static displayName = 'Button';
 
@@ -23,15 +30,21 @@ class Button extends WixComponent {
     prefixIcon: node,
     suffixIcon: node,
     type: string,
+    withNewIcons: bool,
     onClick: func,
     onMouseEnter: func,
     onMouseLeave: func
   }
 
-  static defaultProps = ButtonLayout.defaultProps;
+  static defaultProps = {
+    ...ButtonLayout.defaultProps,
+    withNewIcons: false
+  };
 
   addIcon = (className, icon, height) => {
-    const iconSize = ICON_SIZES[height] || '16px';
+    const iconSizes = this.props.withNewIcons ? NEW_ICON_SIZES : ICON_SIZES;
+    const fallbackSize = this.props.withNewIcons ? iconSizes.medium : '16px';
+    const iconSize = iconSizes[height] || fallbackSize;
     const dataHook = className === styles.prefix ? 'btn-prefix' : 'btn-suffix';
 
     return (
