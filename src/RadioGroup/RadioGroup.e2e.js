@@ -9,9 +9,7 @@ describe('RadioGroup', () => {
   const dataHook = 'storybook-radiogroup';
   const radioGroupDriver = radioGroupTestkitFactory({dataHook});
 
-  beforeAll(() => {
-    browser.get(storyUrl);
-  });
+  beforeAll(() => browser.get(storyUrl));
 
   afterEach(() => {
     autoExampleDriver.reset();
