@@ -29,4 +29,3 @@ package-lock.json
 /new-icons/
 /src/new-icons/system
 /src/new-icons/*.js
-!/src/new-icons/*.e2e.js
