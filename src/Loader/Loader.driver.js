@@ -21,15 +21,14 @@ const loaderDriverFactory = ({element}) => {
     isLoading: () => isClassExists(element, 'loading'),
     isError: () => isClassExists(element, 'error'),
     isSuccess: () => isClassExists(element, 'success'),
-    getStatusMessage: async () => {
+    getStatusMessage: () => {
       const tooltipDriver = tooltipDriverFactory({
         element: findByHook(element, 'loader-tooltip')
       });
 
       tooltipDriver.mouseEnter();
-      await resolveIn(500);
-      return tooltipDriver.getContent();
-
+      return resolveIn(500)
+        .then(() => tooltipDriver.getContent());
     }
   };
 };
