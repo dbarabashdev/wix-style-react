@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CloseButton from './../CloseButton';
+import CloseButton from '../CloseButton';
 import ArrowDownThin from './../Icons/dist/components/ArrowDownThin';
 import Search4 from './../Icons/dist/components/Search4';
 import ThemedInputErrorSuffix from './ThemedInputErrorSuffix';

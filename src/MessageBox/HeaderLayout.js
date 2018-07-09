@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import CloseButton from './../CloseButton';
+import CloseButton from '../CloseButton';
 import styles from './HeaderLayout.scss';
 
 const HeaderLayout = ({title, onCancel, theme, closeButton}) => {

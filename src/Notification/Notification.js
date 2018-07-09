@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import WixComponent from '../BaseComponents/WixComponent';
 import {children, once, optional} from '../../src/Composite';
-import CloseButton from './../CloseButton';
+import CloseButton from '../CloseButton';
 import TextLabel from './TextLabel';
 import ActionButton from './ActionButton';
 import css from './Notification.scss';

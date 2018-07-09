@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import WixComponent from '../BaseComponents/WixComponent';
 import classNames from 'classnames';
-import CloseButton from './../CloseButton';
+import CloseButton from '../CloseButton';
 
 import Button from '../Backoffice/Button';
 
