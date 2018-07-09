@@ -78,6 +78,11 @@ class CollapsedHeader extends WixComponent {
       [styles.withDivider]: !withoutDivider
     });
 
+    const headerClassesWithoutDivider= classNames({
+      [styles.headerOnlyTitle]: !subtitle,
+      [styles.headerTitleSubtitle]: subtitle,
+    });
+
     const switchElement = (
       <div className={styles.collapsedSwitch} onClick={this.stopPropagation}>
         <Switch
@@ -116,10 +121,11 @@ class CollapsedHeader extends WixComponent {
     ) : null;
 
     const toggleElement = this.props.toggleStyle === 'switch' ? switchElement : buttonElement;
+    const switchHeader = this.state.isCollapsed ? headerClassesWithoutDivider : headerClasses
 
     return (
       <div>
-        <div className={headerClasses} onClick={this.onToggleChange}>
+        <div className={switchHeader} onClick={this.onToggleChange}>
           <div>
             {titleElement}
             {subtitleElement}
