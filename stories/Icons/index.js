@@ -8,8 +8,8 @@ import Readme from '../../src/Icons/README.md';
 import AllIcons from './AllIcons';
 import AllIconsRaw from '!raw-loader!./AllIcons';
 
-import CustomeIcon from './CustomIcon';
-import CustomeIconRaw from '!raw-loader!./CustomIcon';
+import CustomIcon from './CustomIcon';
+import CustomIconRaw from '!raw-loader!./CustomIcon';
 
 import RTLIcon from './RTLIcon';
 import RTLIconRaw from '!raw-loader!./RTLIcon';
@@ -22,8 +22,8 @@ storiesOf('1. Foundation', module)
       <CodeExample title="All Icons" code={AllIconsRaw}>
         <AllIcons/>
       </CodeExample>
-      <CodeExample title="Custom Icon" code={CustomeIconRaw}>
-        <CustomeIcon/>
+      <CodeExample title="Custom Icon" code={CustomIconRaw}>
+        <CustomIcon/>
       </CodeExample>
       <CodeExample title="RTL Icon" code={RTLIconRaw}>
         <RTLIcon/>

@@ -1,5 +1,5 @@
 import eyes from 'eyes.it';
-import {getStoryUrl, waitForVisibilityOf} from '../../testkit/protractor';
+import {getStoryUrl, waitForVisibilityOf} from '../../../testkit/protractor';
 
 describe('Icons', () => {
   const storyUrl = getStoryUrl('1. Foundation', '1.4 Icons');
