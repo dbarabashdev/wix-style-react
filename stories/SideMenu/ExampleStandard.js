@@ -21,7 +21,7 @@ export default () =>
             dataHook="site-name-tooltip"
             maxWidth="250"
             >
-            <div>
+            <div style={{display: 'flex'}}>
               <span style={{marginRight: '5px', fontSize: '20px'}}>wix-style-react</span>
               <ExternalLink/>
             </div>
