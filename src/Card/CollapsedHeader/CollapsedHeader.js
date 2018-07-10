@@ -78,9 +78,9 @@ class CollapsedHeader extends WixComponent {
       [styles.withDivider]: !withoutDivider
     });
 
-    const headerClassesWithoutDivider= classNames({
+    const headerClassesWithoutDivider = classNames({
       [styles.headerOnlyTitle]: !subtitle,
-      [styles.headerTitleSubtitle]: subtitle,
+      [styles.headerTitleSubtitle]: subtitle
     });
 
     const switchElement = (
