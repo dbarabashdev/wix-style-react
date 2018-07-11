@@ -121,7 +121,7 @@ class CollapsedHeader extends WixComponent {
     ) : null;
 
     const toggleElement = this.props.toggleStyle === 'switch' ? switchElement : buttonElement;
-    const switchHeader = this.state.isCollapsed ? headerClassesWithoutDivider : headerClasses
+    const switchHeader = this.state.isCollapsed ? headerClassesWithoutDivider : headerClasses;
 
     return (
       <div>
